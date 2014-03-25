@@ -4,13 +4,13 @@
   "description": "Mediumesque theme for Ghost.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/buttreygoodness/mtheme.git"
+    "url": "git://github.com/readypress/mtheme.git"
   },
   "keywords": [
     "Ghost",
     "Medium",
     "Theme"
   ],
-  "author": "Jeff Adkins",
+  "author": "Jeff Adkins for Readypress",
   "license": "MIT"
 }
