@@ -1,0 +1,51 @@
+.hero-home {
+  text-align: center;
+  height: 450px;
+
+  .title-layout {
+    &:before {
+      content: '';
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .align-block {
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+
+      h1 {
+        font-size: 3em;
+      }
+
+      p {
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.background-white {
+  background: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-home {
+    height: 250px;
+
+    .title-layout {
+      .align-block {
+        h1 {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

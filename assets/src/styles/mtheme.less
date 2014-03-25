@@ -1,0 +1,145 @@
+@import "../../components/bootstrap/less/bootstrap";
+// @import "../../components/font-awesome/less/font-awesome";
+// @import (less) "../../components/highlightjs/styles/dark.css";
+
+// @fa-font-path: "../../components/font-awesome/fonts";
+// 
+.ScrollSceneIndicators {
+  z-index: 5000;
+}
+
+@import "./mtheme/site-nav";
+@import "./mtheme/blog-header";
+@import "./mtheme/blog-footer";
+@import "./mtheme/post-list-item";
+@import "./mtheme/post-header";
+@import "./mtheme/post";
+
+@main_font_color: #333332;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: @main_font_color;
+  font-size: 18px;
+  line-height: 1.4;
+  font-smoothing: antialiased;
+  letter-spacing: -0.02em;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+a {
+  color: @main_font_color;
+
+  &:hover {
+    color: @main_font_color;
+    text-decoration: none;
+  }
+}
+
+#scrollPinOne {
+  position: absolute;
+  top: 50%;
+}
+
+#mtheme-home-container{
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+
+.fill-height {
+  height: 100%;
+}
+
+.header-height {
+  height: 450px;
+}
+
+.header-height-sm {
+  height: 300px;
+}
+
+.mtheme-container {
+  overflow: hidden;
+  background: #EEE;
+  height: 100%;
+
+  .surface {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    .screen-content {
+      position: relative;
+      overflow: auto;
+      height: 100%;
+
+      .image-header {
+        position: absolute;
+        background: #191918;
+        top: 0;
+        left: 0;
+        right: 0;
+        .header-height;
+        pointer-events: none;
+        width: 100%;
+
+        .image-source {
+          background: url(../images/cover.jpg) no-repeat center center;
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+
+        .image-source-blur {
+          background: url(../images/cover_blur.jpg) no-repeat center center;
+          background-size: cover;
+          opacity: 0.0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+
+          &.image-source-blur-visible {
+            opacity: 1.0;
+          }
+        }
+      }
+
+      .foreground {
+        position: relative;
+        overflow: auto;
+        z-index: 100;
+      }
+    }
+  }
+}
+
+.image-header-wrapper {
+  width: 100%;
+  position: fixed;
+}
+
+@media screen and (max-width: 500px) {
+  .mtheme-container {
+    .surface {
+      .screen-content {
+        .image-header {
+          .header-height-sm
+        }
+      }
+    }
+  }
+}

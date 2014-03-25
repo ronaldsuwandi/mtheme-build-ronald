@@ -1,0 +1,10 @@
+{
+  "name": "mtheme",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "",
+    "instantclick": "",
+    "ScrollMagic": "~1.0.4",
+    "requirejs": "~2.1.11"
+  }
+}

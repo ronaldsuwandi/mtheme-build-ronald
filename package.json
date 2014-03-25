@@ -1,0 +1,35 @@
+{
+  "name": "mtheme",
+  "version": "0.1.0-beta",
+  "description": "Mediumesque theme for Ghost.",
+  "main": "grunt",
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/buttreygoodness/mtheme.git"
+  },
+  "keywords": [
+    "Ghost",
+    "Medium",
+    "Theme"
+  ],
+  "author": "Jeff Adkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buttreygoodness/mtheme/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-autoprefixer": "~0.7.2",
+    "grunt-config-loader": "~0.2.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-requirejs": "^0.4.3",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
