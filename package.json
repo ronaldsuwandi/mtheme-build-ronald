@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/buttreygoodness/mtheme.git"
+    "url": "git://github.com/readypress/mtheme.git"
   },
   "keywords": [
     "Ghost",
     "Medium",
     "Theme"
   ],
-  "author": "Jeff Adkins",
+  "author": "Jeff Adkins for Readypress",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buttreygoodness/mtheme/issues"
+    "url": "https://github.com/readypress/mtheme/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
