@@ -1,7 +1,7 @@
 require.config({
   paths: {
-    jquery: '../../../../../../../bower_components/jquery/dist/jquery', // use Ghost's jquery
-    lodash: '../../../../../../../bower_components/lodash/dist/lodash', // use Ghost's lodash
+    jquery: '../../../components/jquery/jquery',
+    lodash: '../../../components/lodash/dist/lodash',
     instantclick: '../../../components/instantclick/instantclick',
     scrollmagic: '../../../components/ScrollMagic/js/jquery.scrollmagic',
     scrollmagic_debug: '../../../components/ScrollMagic/js/jquery.scrollmagic.debug',
