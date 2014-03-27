@@ -9,7 +9,7 @@ Mediumesque theme for Ghost.
 - Has subtle CSS animations on scroll
 - Responsive images within the post
 - Mobile-friendly
-- Supports static pages (sort of)
+- Supports static pages
 
 ### Download
 The latest release can be downloaded from the [releases](https://github.com/readypress/mtheme/releases/) page.
@@ -38,9 +38,14 @@ For now, linking to pages and external resources is done in the footer, which is
 
 Links can be added and changed there.
 
+#### Disqus support
+Within post.hbs, at the bottom is a section that can be uncommented and filled in to provide disqus functionality to your posts.
+
+Make sure to fill in your disqus website shortname.
+
 ### Screenshot
 
-{<2>}![screenshot](https://raw.githubusercontent.com/readypress/mtheme/master/screenshot.png)
+{<1>}![screenshot](https://raw.githubusercontent.com/readypress/mtheme/master/screenshot.png)
 
 
 mtheme's cover images courtesy GH Cheng (http://www.flickr.com/photos/ghcheng/) from creative commons licenced photos.
