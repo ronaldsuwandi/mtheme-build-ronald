@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    jquery: '../../../components/jquery/jquery',
+    jquery: '../../../components/jquery/dist/jquery',
     lodash: '../../../components/lodash/dist/lodash',
     instantclick: '../../../components/instantclick/instantclick',
     scrollmagic: '../../../components/ScrollMagic/js/jquery.scrollmagic',

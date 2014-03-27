@@ -2,7 +2,8 @@ var config = {
   taskName: 'copy',
   watch: {
     files: [
-      { expand: true, cwd: 'assets/src/images/', src: '**', dest: 'assets/dist/images/', flatten: true, filter: 'isFile' }
+      { expand: true, cwd: 'assets/src/images/', src: '**', dest: 'assets/dist/images/', flatten: true, filter: 'isFile' },
+      { expand: true, cwd: 'assets/src/scripts/', src: 'modernizr.custom.js', dest: 'assets/dist/scripts/', flatten: true, filter: 'isFile' }
     ]
   },
   build: {
