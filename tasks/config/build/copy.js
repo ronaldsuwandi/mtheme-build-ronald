@@ -19,7 +19,7 @@ var config = {
   },
   templates: {
     src: 'default.hbs',
-    dest: 'build/default.hbs',
+    dest: 'mtheme/default.hbs',
     options: {
       process: function (content) {
         return content.replace(/dist\//g, '');
