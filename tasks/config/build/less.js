@@ -5,7 +5,7 @@ var config = {
       paths: ['assets/src/styles/**/*.less']
     },
     files: {
-      'assets/dist/styles/mtheme.css': 'assets/src/styles/mtheme.less'
+      'assets/dist/styles/mtheme-ronald.css': 'assets/src/styles/mtheme-ronald.less'
     }
   },
   build: {
@@ -14,7 +14,7 @@ var config = {
       cleancss: true
     },
     files: {
-      'assets/dist/styles/mtheme.css': 'assets/src/styles/mtheme.less'
+      'assets/dist/styles/mtheme-ronald.css': 'assets/src/styles/mtheme-ronald.less'
     }
   }
 };

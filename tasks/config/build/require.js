@@ -3,20 +3,20 @@ var config = {
   watch: {
     options: {
       optimize: 'none',
-      name: 'mtheme',
-      baseUrl: 'assets/src/scripts/mtheme',
-      mainConfigFile: 'assets/src/scripts/mtheme/config.js',
-      out: 'assets/dist/scripts/mtheme.min.js'
+      name: 'mtheme-ronald',
+      baseUrl: 'assets/src/scripts/mtheme-ronald',
+      mainConfigFile: 'assets/src/scripts/mtheme-ronald/config.js',
+      out: 'assets/dist/scripts/mtheme-ronald.min.js'
     }
   },
 
   build: {
     options: {
       optimize: 'uglify',
-      name: 'mtheme',
-      baseUrl: 'assets/src/scripts/mtheme',
-      mainConfigFile: 'assets/src/scripts/mtheme/config.js',
-      out: 'assets/dist/scripts/mtheme.min.js'
+      name: 'mtheme-ronald',
+      baseUrl: 'assets/src/scripts/mtheme-ronald',
+      mainConfigFile: 'assets/src/scripts/mtheme-ronald/config.js',
+      out: 'assets/dist/scripts/mtheme-ronald.min.js'
     }
   }
 };
