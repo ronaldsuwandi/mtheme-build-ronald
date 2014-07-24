@@ -5,14 +5,16 @@
   <div class="surface">
     <div class="screen-content">
       <div id="scrollPinOne" class="clearfix"></div>
-      <div class='image-header-wrapper'>
+      <div class='background-size-full'>
         <div class="image-header">
           <div class="image-source"></div>
           <div class="image-source-blur"></div>
         </div>
+        <div class="header-content">
+          {{> blog_header}}
+        </div>
       </div>
       <div class="main foreground scrolling-region">
-        {{> blog_header}}
         <div class="background-white">
           <div class="container">
             <ul class="post-list">
