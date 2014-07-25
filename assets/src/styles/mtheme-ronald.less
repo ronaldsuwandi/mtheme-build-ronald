@@ -107,9 +107,10 @@ a {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 150px;
-        padding-top: 100px;
-        padding-bottom: 20px;
+        top: 30%;
+        // bottom: 100px;
+        // padding-top: 100px;
+        // padding-bottom: 20px;
         color: #fff;
       }
 
@@ -119,5 +120,32 @@ a {
         z-index: 100;
       }
     }
+  }
+}
+
+.header-down-arrow {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  margin-left: -8px;
+  border: 2px solid rgba(255,255,255,0.35);
+  background: rgba(0,0,0,0);
+  border-left: 0;
+  border-top: 0;
+  outline: 0;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: border 0.2s ease;
+  
+  &:hover, &:active {
+    border: 2px solid rgba(255,255,255,0.65);
+    border-left: 0;
+    border-top: 0;
+    outline: 0;
+    transform: rotate(45deg);
   }
 }
