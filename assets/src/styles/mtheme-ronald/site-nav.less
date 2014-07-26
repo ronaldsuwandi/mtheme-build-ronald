@@ -1,0 +1,42 @@
+.site-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  outline: 0;
+  background-color: #191918;
+
+  .site-nav-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 44px;
+    height: 44px;
+    z-index: 700;
+    background-color: #333332;
+    text-align: center;
+    border: 0;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    transition: top .2s linear, left .2s linear, opacity .2s linear;
+    outline: none;
+    padding: 0;
+
+    &.fadeaway {
+      opacity: 0;
+      left: -50px;
+    }
+
+    .icons-logo {
+      p {
+        font-family: "EB Garamond", serif;
+        font-size: 24px;
+        font-weight: bolder;
+        color: #fff;
+        display: block;
+        margin-top: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+}

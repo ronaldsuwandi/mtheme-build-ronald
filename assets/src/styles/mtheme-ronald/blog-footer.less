@@ -1,0 +1,49 @@
+.small-font-grey-links {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #b3b3b1;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.02em;
+
+  a {
+    color: #b3b3b1;
+    text-decoration: none;
+    transition: .5s color, .5s text-decoration;
+    font-weight: 400;
+
+    &:hover {
+      color: #333;
+      text-decoration: underline;
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  .small-font-grey-links;
+
+  a.older-posts {
+    font-weight: 400;
+  }
+}
+
+.mtheme-footer {
+  padding: 15px 0 25px;
+  border-top: 1px solid #f2f2f0;
+  margin-top: 80px;
+  .small-font-grey-links;
+  font-size: 12px;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
