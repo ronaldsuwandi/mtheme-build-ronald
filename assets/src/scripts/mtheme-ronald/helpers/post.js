@@ -1,4 +1,5 @@
-define(['scrollmagic', 'jquery'], function (ScrollMagic, $) {
+/* jshint unused:false */
+define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, SiteHelper) {
 
   var PostHelper = function () {};
 
@@ -11,11 +12,20 @@ define(['scrollmagic', 'jquery'], function (ScrollMagic, $) {
 
   PostHelper.prototype.setCoverImage = function () {
     var cover_image = $('img[alt=\'COVER_IMAGE\']'),
-        story_cover = $('.story-cover .story-cover-image');
+        story_cover = $('.story-cover .story-cover-image'),
+        post_header = $('.post-header'),
+        cover_arrow = $('.header-down-arrow');
 
     if (cover_image.length > 0) {
       story_cover.css('background-image', 'url(' + cover_image.attr('src') + ')').addClass('covered');
       cover_image.remove();
+      
+      SiteHelper.imageBrightness(cover_image.attr('src'), function(brightness) {
+        if (brightness > 125) {
+          post_header.addClass('dark');
+          cover_arrow.addClass('dark');
+        }
+      });
     }
   };
 

@@ -49,13 +49,20 @@
     padding-top: 100px;
     padding-bottom: 20px;
     color: #fff;
+    transition: color 0.2s linear;
 
     .post-content {
       width: 700px;
       margin: 0 auto;
 
       .post-header {
-
+        text-shadow: @main_font_color 0 0 10px;
+        
+        &.dark {
+          color: @main_font_color;
+          text-shadow: #fff 0 0 10px;
+        }
+        
         h1.post-title {
           font-size: 48px;
         }

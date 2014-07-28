@@ -13,14 +13,6 @@ require.config({
       exports: 'InstantClick'
     },
 
-    jquery: {
-      exports: ['jQuery', '$']
-    },
-
-    lodash: {
-      exports: ['_']
-    },
-
     scrollmagic: {
       exports: ['ScrollMagic'],
       deps: ['jquery', 'tweenmax']
