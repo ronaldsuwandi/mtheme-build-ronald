@@ -20,7 +20,6 @@ body {
   font-size: 18px;
   line-height: 1.4;
   font-smoothing: antialiased;
-  letter-spacing: -0.02em;
   text-rendering: optimizeLegibility;
 }
 
@@ -31,9 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: @main_font_color;
-
+  text-decoration: none;
+  transition: color 0.2s linear;
+  
   &:hover {
-    color: @main_font_color;
+    color: lighten(@main_font_color, 25%);
     text-decoration: none;
   }
 }
@@ -150,5 +151,17 @@ a {
     &:hover, &:active {
       border-color: rgba(0,0,0,0.35);
     }
+  }
+}
+
+spoiler {
+  display: inline;
+  background: @main_font_color;
+  color: @main_font_color;
+  transition: background 0.2s linear;
+  cursor: pointer;
+  
+  &:hover, &:active {
+    background: none;
   }
 }
