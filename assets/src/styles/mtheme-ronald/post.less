@@ -27,7 +27,7 @@
   }
   
   a, a:hover, a:active {
-    text-decoration: underline;
+    font-weight: 600;
   }
 }
 
@@ -96,36 +96,41 @@
 
 .post-page-wrapper {
   overflow: hidden;
-  font-family: 'Muli', sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Muli', sans-serif;
     font-weight: 700;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
     padding-top: 31px;
     margin-bottom: 8px;
   }
 
   h3, blockquote {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
   }
 
   p, blockquote, ul, ol {
     margin-bottom: 35px;
   }
-
+  
+  img {
+    margin: auto;
+    
+    &.inline {
+      margin: 0;
+    }
+  }
+  
   blockquote {
-    font-family: ;
     font-style: oblique;
     text-rendering: optimizeLegibility;
     font-family: 'Merriweather', serif;
