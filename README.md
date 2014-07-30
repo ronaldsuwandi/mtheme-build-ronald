@@ -14,7 +14,7 @@ Mediumesque theme for Ghost. Forked from [mtheme](https://github.com/readypress/
 - Slight transition animation for `<a>` links
 - Added `<spoiler>` tag support. Text contained within the tag will be hidden unless being hovered/clicked
 - Copyright year is added automatically from the latest post
-- 
+- Blog logo is supported but only up to maximum height of 100px
 
 ### Features
 

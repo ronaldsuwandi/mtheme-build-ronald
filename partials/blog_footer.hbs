@@ -1,16 +1,17 @@
 <div class="mtheme-footer">
+  {{#unless posts.length}}
+    <div class="btn-container">
+      <a class="btn btn-default " href="{{@blog.url}}">Back to Overview</a>
+    </div>
+  {{/unless}}
+  
   <p>
     &copy; <a href="{{@blog.url}}">Author Name</a> {{#if posts}}{{date posts.0.published_at format="YYYY"}}{{/if}} &middot; All Rights Reserved
     <br>
     Powered by <a href="https://ghost.org/">Ghost</a> on <a href="https://github.com/ronaldsuwandi/mtheme-ronald">mtheme-ronald</a> theme
   </p>
   
-  <ul class="pull-left">
-    <li>
-      <a href="{{@blog.url}}"><i class="fa fa-fw fa-home"></i></a>
-    </li>
-  </ul>
-  <ul class="pull-right">
+  <ul>
     <li>
       <a href="{{@blog.url}}/rss/"><i class="fa fa-fw fa-rss"></i></a>
     </li>
