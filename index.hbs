@@ -12,7 +12,7 @@
         </div>
         <div class="header-content">
           {{> blog_header}}
-          <span class="header-down-arrow" data-action="scroll-to-post-start"></span>
+          <i class="fa fa-angle-down fa-fw fa-lg header-down-arrow" data-action="scroll-to-post-start"></i>
         </div>
       </div>
       <div class="main foreground scrolling-region">
@@ -24,16 +24,22 @@
               {{/foreach}}
             </ul>
             <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                {{pagination}}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                {{> blog_footer}}
+              <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                  {{pagination}}
+                </div>
               </div>
             </div>
           </div>
+          <footer>
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  {{> blog_footer}}
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>

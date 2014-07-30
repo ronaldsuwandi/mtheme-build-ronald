@@ -13,6 +13,8 @@ Mediumesque theme for Ghost. Forked from [mtheme](https://github.com/readypress/
 - `<cite>` wrapped within `blockquote` will be displayed on the right with a smaller font
 - Slight transition animation for `<a>` links
 - Added `<spoiler>` tag support. Text contained within the tag will be hidden unless being hovered/clicked
+- Copyright year is added automatically from the latest post
+- 
 
 ### Features
 

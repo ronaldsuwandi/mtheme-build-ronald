@@ -1,14 +1,13 @@
 .small-font-grey-links {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   color: #b3b3b1;
   text-rendering: optimizeLegibility;
-  letter-spacing: -0.02em;
 
   a {
     color: #b3b3b1;
     text-decoration: none;
-    transition: .5s color, .5s text-decoration;
+    transition: 0.2s color linear, 0.2s text-decoration linear;
     font-weight: 400;
 
     &:hover {
@@ -31,20 +30,32 @@
 
 .mtheme-footer {
   padding: 15px 0 25px;
-  border-top: 1px solid #f2f2f0;
-  margin-top: 80px;
+  margin-bottom: 10px;
   .small-font-grey-links;
-  font-size: 18px;
-
+  
+  p {
+    clear: both;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    
+    a {
+      text-decoration: underline;
+    }
+  }
+  
   ul {
-    text-align: right;
+    display: inline-block;
     padding: 0;
     list-style: none;
     list-style-image: none;
-
+    margin-bottom: 0;
+    
     li {
       display: inline-block;
       margin-right: 10px;
+      font-size: 18px;
     }
   }
 }

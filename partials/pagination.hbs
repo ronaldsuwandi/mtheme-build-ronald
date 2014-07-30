@@ -1,0 +1,15 @@
+<nav class="pagination col-xs-12" role="navigation">
+  <div class="col-xs-4 newer-posts">
+    {{#if prev}}
+    <a href="{{page_url prev}}">← Newer Posts</a>
+    {{/if}}
+  </div>
+  <div class="col-xs-4">
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+  </div>
+  <div class="col-xs-4 older-posts">
+    {{#if next}}
+    <a href="{{page_url next}}">Older Posts →</a>
+    {{/if}}
+  </div>
+</nav>

@@ -5,11 +5,12 @@
 }
 
 @import "./mtheme-ronald/site-nav";
+@import "./mtheme-ronald/pagination";
 @import "./mtheme-ronald/blog-header";
-@import "./mtheme-ronald/blog-footer";
 @import "./mtheme-ronald/post-list-item";
 @import "./mtheme-ronald/post-header";
 @import "./mtheme-ronald/post";
+@import "./mtheme-ronald/blog-footer";
 
 @main_font_color: #333332;
 
@@ -56,7 +57,7 @@ a {
 
 .mtheme-container {
   overflow: hidden;
-  background: #EEE;
+  background: #eee;
   height: 100%;
 
   .surface {
@@ -118,10 +119,15 @@ a {
       }
     }
   }
+  
+  footer {
+    display: block;
+    background: #e4e8e9;
+    margin-top: 40px;
+  }
 }
 
 .header-down-arrow {
-  content: '';
   display: block;
   width: 16px;
   height: 16px;
@@ -129,27 +135,22 @@ a {
   bottom: -100px;
   left: 50%;
   margin-left: -8px;
-  border: 2px solid rgba(255,255,255,0.65);
-  background: rgba(0,0,0,0);
-  border-left: 0;
-  border-top: 0;
-  outline: 0;
-  transform: rotate(45deg);
   cursor: pointer;
-  transition: border 0.2s ease;
-  
+  transition: all 0.2s ease;
+  opacity: 0.35;
+  color: #fff;
+  text-shadow: 0 0 5px @main_font_color;
+
   &:hover, &:active {
-    border: 2px solid #fff;
-    border-left: 0;
-    border-top: 0;
-    outline: 0;
-    transform: rotate(45deg);
+    opacity: 0.85;
   }
   
   &.dark {
-    border-color: @main_font_color;
+    color: @main_font_color;
+    opacity:0.85;
+    text-shadow: 0 0 5px #fff;
     &:hover, &:active {
-      border-color: rgba(0,0,0,0.35);
+      opacity: 0.35;
     }
   }
 }
