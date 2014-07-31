@@ -6,7 +6,12 @@
   {{/unless}}
   
   <p>
-    &copy; <a href="{{@blog.url}}">Author Name</a> {{#if posts}}{{date posts.0.published_at format="YYYY"}}{{/if}} &middot; All Rights Reserved
+    &copy; <a href="{{@blog.url}}">Author Name</a>
+    {{#if posts}}
+      {{date posts.0.published_at format="YYYY"}}
+    {{else}}
+      {{date published_at format="YYYY"}}
+    {{/if}} &middot; All Rights Reserved
     <br>
     Powered by <a href="https://ghost.org/">Ghost</a> on <a href="https://github.com/ronaldsuwandi/mtheme-ronald">mtheme-ronald</a> theme
   </p>
