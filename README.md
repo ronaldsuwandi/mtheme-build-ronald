@@ -8,13 +8,16 @@ Mediumesque theme for Ghost. Forked from [mtheme](https://github.com/readypress/
 - Full screen hero image on the index (also has down arrow)
 - Automatic image brightness detection on the post to determine whether to use light or dark text as the header (also for the arrow)
 - Uses font-awesome for the footer for various social links (linkedin, github, bitbucket, dribbble, etc)
-- Uses Muli and Merriweather fonts from Google Web Fonts
+- Uses Avenir font for the text if exists, other wise uses Muli
+- Uses Merriweather and Muli fonts from Google Web Fonts (self-hosted Muli for the bold typeface)
 - Slightly modified `blockquote` design
 - `<cite>` wrapped within `blockquote` will be displayed on the right with a smaller font
 - Slight transition animation for `<a>` links
 - Added `<spoiler>` tag support. Text contained within the tag will be hidden unless being hovered/clicked
 - Copyright year is added automatically from the latest post
 - Blog logo is supported but only up to maximum height of 100px
+- Image in post by default will be centered (margin auto). To avoid this, add `inline` class within `<img>` tag manually (You can't use markdown image styling at this time)
+- Tag-specific page
 
 ### Features
 

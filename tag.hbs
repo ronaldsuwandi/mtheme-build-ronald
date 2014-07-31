@@ -4,19 +4,17 @@
 <div class="mtheme-container" id="mtheme-home-container">
   <div class="surface">
     <div class="screen-content">
-      <div id="scrollPinOne" class="clearfix"></div>
-      <div class='background-size-full'>
-        <div class="image-header">
-          <div class="image-source"></div>
-        </div>
-        <div class="header-content">
-          {{> blog_header}}
-          <i class="fa fa-angle-down fa-fw fa-lg header-down-arrow" data-action="scroll-to-post-start"></i>
-        </div>
-      </div>
       <div class="main foreground scrolling-region">
         <div class="background-white">
           <div class="container">
+            <div class="row">
+              <div class="col-xs-6 col-xs-offset-3 tag-button-container">
+                <span class="tag-button">
+                  {{tag.name}} <a href="{{@blog.url}}"><i class="fa fa-times"></i></a>
+                </span>
+              </div>
+            </div>
+            
             <ul class="post-list">
               {{#foreach posts}}
                 {{> post_listitem}}

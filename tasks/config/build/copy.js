@@ -3,7 +3,8 @@ var config = {
   watch: {
     files: [
       { expand: true, cwd: 'assets/src/images/', src: '**', dest: 'assets/dist/images/', flatten: true, filter: 'isFile' },
-      { expand: true, cwd: 'assets/src/scripts/', src: 'modernizr.custom.js', dest: 'assets/dist/scripts/', flatten: true, filter: 'isFile' }
+      { expand: true, cwd: 'assets/src/scripts/', src: 'modernizr.custom.js', dest: 'assets/dist/scripts/', flatten: true, filter: 'isFile' },
+      { expand: true, cwd: 'assets/src/fonts/', src: '**', dest: 'assets/dist/fonts/', flatten: true, filter: 'isFile' }
     ]
   },
   build: {
@@ -14,6 +15,7 @@ var config = {
       { expand: true, cwd: 'assets/dist/images/', src: '**', dest: 'mtheme-ronald/assets/images/', flatten: true, filter: 'isFile' },
       { expand: true, cwd: 'assets/dist/scripts/', src: '**', dest: 'mtheme-ronald/assets/scripts/', flatten: true, filter: 'isFile' },
       { expand: true, cwd: 'assets/dist/styles/', src: '**', dest: 'mtheme-ronald/assets/styles/', flatten: true, filter: 'isFile' },
+      { expand: true, cwd: 'assets/dist/fonts/', src: '**', dest: 'mtheme-ronald/assets/fonts/', flatten: true, filter: 'isFile' },
       { expand: true, cwd: 'assets/components/requirejs/', src: 'require.js', dest: 'mtheme-ronald/assets/components/requirejs/', flatten: true, filter: 'isFile' }
     ]
   },

@@ -25,10 +25,6 @@
       overflow: hidden;
     }
   }
-  
-  a, a:hover, a:active {
-    font-weight: 600;
-  }
 }
 
 .story-cover {
@@ -53,13 +49,13 @@
     padding-top: 100px;
     padding-bottom: 20px;
     color: #fff;
-    transition: color 0.2s linear;
 
     .post-content {
       width: 700px;
       margin: 0 auto;
 
       .post-header {
+        transition: color 0.2s linear;
         text-shadow: @main_font_color 0 0 10px;
         
         &.dark {
@@ -101,6 +97,16 @@
   font-size: 18px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+  
+  a {
+    color: lighten(@main_font_color, 10%);
+    &:hover, &:active {
+      color: @main_font_color;
+    }
+  }
+  a, a:hover, a:active {
+    font-weight: 700;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;

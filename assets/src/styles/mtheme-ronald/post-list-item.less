@@ -21,7 +21,7 @@ ul.post-list {
   padding: 40px 0;
 
   .post-item-title {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 
   .post-item-meta {
@@ -30,11 +30,31 @@ ul.post-list {
     font-weight: 400;
 
     a {
+      font-weight: 600;
       color: inherit;
 
       &:hover {
-        color: inherit;
+        color: darken(#b3b3b1, 30%);
       }
+    }
+    
+    img {
+      display: inline;
+    }
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    
+    &.inline {
+      margin: 0;
+    }
+    
+    // hide cover image
+    &[alt='COVER_IMAGE'] {
+      display: none;
     }
   }
 }

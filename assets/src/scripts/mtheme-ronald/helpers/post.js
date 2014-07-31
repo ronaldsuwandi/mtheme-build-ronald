@@ -18,7 +18,7 @@ define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, Site
 
     if (cover_image.length > 0) {
       story_cover.css('background-image', 'url(' + cover_image.attr('src') + ')').addClass('covered');
-      cover_image.remove();
+      // cover_image.remove();
       
       SiteHelper.imageBrightness(cover_image.attr('src'), function(brightness) {
         if (brightness > 125) {

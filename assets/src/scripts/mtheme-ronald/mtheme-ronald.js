@@ -7,8 +7,7 @@ require(['helpers/site', 'helpers/index', 'helpers/post', 'lodash'], function (S
     site.init();
 
     var bc = this.bodyClass();
-
-    if (_.intersection(bc, ['home-template', 'archive-template'])) {
+    if (_.contains(['home-template', 'archive-template'], bc)) {
       var index = new IndexHelper();
       index.init();
     }
