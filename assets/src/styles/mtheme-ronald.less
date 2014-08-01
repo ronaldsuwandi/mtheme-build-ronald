@@ -46,7 +46,7 @@ a {
   text-decoration: none;
   transition: color 0.2s linear;
   
-  &:hover {
+  &:hover, &:focus {
     color: lighten(@main_font_color, 25%);
     text-decoration: none;
   }
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
           color: #fff;
           a {
             color: darken(#fff, 15%);
-            &:active,&:hover {
+            &:active,&:hover,&:focus {
               color: #fff;
             }
           }
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-shadow: 0 0 5px @main_font_color;
 
-  &:hover, &:active {
+  &:hover, &:focus, &:active {
     opacity: 0.85;
   }
   
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
     color: @main_font_color;
     opacity:0.85;
     text-shadow: 0 0 5px #fff;
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
       opacity: 0.45;
     }
   }
@@ -173,7 +173,7 @@ spoiler {
   transition: background 0.2s linear;
   cursor: pointer;
   
-  &:hover, &:active {
+  &:hover, &:focus, &:active {
     background: none;
   }
 }
