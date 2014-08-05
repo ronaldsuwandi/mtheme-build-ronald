@@ -8,7 +8,7 @@ define(['scrollmagic'], function (ScrollMagic) {
   };
   
   IndexHelper.prototype.setHeaderImage = function() {
-    var controller = new ScrollMagic({container: '.screen-content'});
+    var controller = new ScrollMagic();
     var tween = TweenMax.to('.hero-home', 0.5, {className: '+=hero-home-fade'});
     var scene = new ScrollScene( {triggerElement: '#scrollPinOne', duration: 200});
     scene.setTween(tween).addTo(controller);
@@ -16,15 +16,13 @@ define(['scrollmagic'], function (ScrollMagic) {
   
   IndexHelper.prototype.setArrow = function() {
     var cover_arrow = $('.header-down-arrow');
-
+    var main = $('.main');
+    var body = $('body');
+    
     cover_arrow.click(function (e) {
       e.preventDefault();
-      var image_header = $('.image-header');
-      var screen_content = $('.screen-content');
-      var offset = image_header.height();
-
-      screen_content.animate({
-        'scrollTop': offset
+      body.animate({
+        'scrollTop': main.offset().top
       }, 500, function () {
         // nothing here yet.
       });

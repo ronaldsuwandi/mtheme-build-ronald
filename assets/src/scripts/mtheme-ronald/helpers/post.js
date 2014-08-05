@@ -30,9 +30,9 @@ define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, Site
   };
 
   PostHelper.prototype.setPostScroll = function () {
-    var controller = new ScrollMagic({container: '.screen-content'}),
+    var controller = new ScrollMagic(),
         tween = TweenMax.to('.story-cover-content', 0.5, {className: '+=story-cover-fade' }),
-        scene = new ScrollScene( {triggerElement: '#scrollPinOne', duration: 600, offset: 0} )
+        scene = new ScrollScene({triggerElement: '#scrollPinOne', duration: 600, offset: 0})
           .setTween(tween)
           .addTo(controller);
 
@@ -41,15 +41,13 @@ define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, Site
 
   PostHelper.prototype.setCoverArrow = function () {
     var cover_arrow = $('.header-down-arrow');
+    var story_cover = $('.story-cover');
+    var body = $('body');
 
     cover_arrow.click(function (e) {
       e.preventDefault();
-      var story_cover = $('.story-cover');
-      var screen_content = $('.screen-content');
-      var offset = story_cover.height();
-
-      screen_content.animate({
-        'scrollTop': offset
+      body.animate({
+        'scrollTop': story_cover.height()
       }, 500, function () {
         // nothing here yet.
       });

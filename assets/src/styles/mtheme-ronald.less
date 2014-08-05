@@ -75,23 +75,17 @@ h1, h2, h3, h4, h5, h6 {
 
     .screen-content {
       position: relative;
-      overflow: auto;
       height: 100%;
       -webkit-overflow-scrolling: touch;
 
-      .image-header {
-        height: 100%;
-
-        .image-source {
-          background: url(../images/cover.jpg) no-repeat center center;
-          background-size: cover;
-          background-attachment: fixed;
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-        }
+      .image-source {
+        background: url(../images/cover.jpg) no-repeat center center;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
       }
       
       .tag-button-container {
@@ -121,8 +115,8 @@ h1, h2, h3, h4, h5, h6 {
 
       .foreground {
         position: relative;
-        overflow: auto;
         z-index: 100;
+        top: 100%;
         -webkit-overflow-scrolling: touch;
       }
     }
@@ -172,5 +166,16 @@ spoiler {
   
   &:hover, &:focus, &:active {
     background: none;
+  }
+}
+
+.background-size-full {
+  height: 100%;
+  max-height: 900px;
+  background-color: #191918;
+  background-position: center;
+
+  &.picker-layout-fill {
+    margin-bottom: 60px;
   }
 }
