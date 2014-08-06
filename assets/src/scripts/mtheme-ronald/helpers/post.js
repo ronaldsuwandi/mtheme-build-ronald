@@ -17,8 +17,9 @@ define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, Site
         cover_arrow = $('.header-down-arrow');
 
     if (cover_image.length > 0) {
-      story_cover.css('background-image', 'url(' + cover_image.attr('src') + ')').addClass('covered');
-      // cover_image.remove();
+      var gradient = 'linear-gradient(to bottom, rgba(0,0,0,0) 65%, ' +
+          'rgba(10,10,10,0.15))';
+      story_cover.css('background-image', gradient + ', url(' + cover_image.attr('src') + ')').addClass('covered');
       
       SiteHelper.imageBrightness(cover_image.attr('src'), function(brightness) {
         if (brightness > 125) {
@@ -26,6 +27,8 @@ define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, Site
           cover_arrow.addClass('dark');
         }
       });
+
+      cover_image.remove();
     }
   };
 
