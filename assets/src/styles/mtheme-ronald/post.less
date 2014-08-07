@@ -20,14 +20,14 @@
   height: 100%;
 
   .story-cover-image {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(10,10,10,0.15)),
-                #191918;
+    background: @bg_gradient,
+                #1c1c1c;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;
+    background-size: contain, cover;
     background-position: center;
   }
 
@@ -221,4 +221,10 @@
   .background-size-full {
     max-height: none;
   }
+}
+
+#disqus_thread {
+  margin-top: 8rem;
+  padding-top: 2rem;
+  border-top: solid 1px #c1c0be;
 }
