@@ -17,7 +17,7 @@ define(['scrollmagic', 'jquery', 'helpers/site'], function (ScrollMagic, $, Site
         cover_arrow = $('.header-down-arrow');
 
     if (cover_image.length > 0) {
-      var gradient = 'url(/assets/dist/images/gradient.png)';
+      var gradient = 'url(/assets/images/gradient.png)';
       story_cover.css('background-image', gradient + ', url(' + cover_image.attr('src') + ')').addClass('covered');
       
       SiteHelper.imageBrightness(cover_image.attr('src'), function(brightness) {
