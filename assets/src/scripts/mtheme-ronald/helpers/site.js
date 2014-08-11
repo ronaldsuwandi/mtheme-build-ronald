@@ -7,8 +7,9 @@ define(['jquery'], function () {
   
   SiteHelper.imageBrightness = function (imageSrc, callback) {
     var img = document.createElement('img');
-    img.src = imageSrc;
     img.style.display = 'none';
+    img.crossOrigin = 'Anonymous';
+    img.src = imageSrc;
     document.body.appendChild(img);
 
     var colorSum = 0;
